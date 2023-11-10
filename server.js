@@ -48,8 +48,4 @@ app.get('/repos/:owner/:repo/contents/*', async (req, res) => {
 });
 
 // Start the server and log any errors
-app.listen(port, () => {
-  console.log(`API server listening at http://localhost:${port}`);
-}).on('error', (err) => {
-  console.error('Failed to start server:', err);
-});
+module.exports = app;
